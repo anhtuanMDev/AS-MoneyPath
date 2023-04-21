@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment_User">
+
+    <ImageView
+        android:layout_width="960dp"
+        android:layout_height="580dp"
+        android:layout_marginStart="-220dp"
+        android:layout_marginTop="-65dp"
+        android:src="@drawable/user_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/prata"
+        android:text="Alex Alexander"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/user_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:src="@drawable/menu" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        app:cardCornerRadius="150dp">
+
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar"></ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="17dp">
+
+<!--        Saving-->
+        
+        <View
+            android:layout_width="122dp"
+            android:layout_height="58dp"
+            android:layout_alignTop="@+id/user_saving"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.2"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/user_saving"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userSaving_header"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="20$"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userSaving_header"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/prata"
+            android:paddingStart="10dp"
+            android:text="Saving"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+<!--        Daily Budget-->
+        
+        <View
+            android:layout_width="122dp"
+            android:layout_height="58dp"
+            android:layout_alignTop="@+id/user_dailyBudget"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.2"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/user_dailyBudget"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userDailyBudget_header"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="20$"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userDailyBudget_header"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_saving"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/prata"
+            android:paddingStart="10dp"
+            android:text="Daily Budget"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+<!--        Spend-->
+        
+        <View
+            android:layout_width="122dp"
+            android:layout_height="58dp"
+            android:layout_alignTop="@+id/user_spend"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.2"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/user_spend"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userSpend_header"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="20$"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userSpend_header"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_dailyBudget"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/prata"
+            android:paddingStart="10dp"
+            android:text="Spend"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.2"
+        android:text="See your Expenses"/>
+
+    <Button
+        android:id="@+id/user_seeExpense"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_corner"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:fontFamily="@font/prata"
+        android:textSize="13sp"
+        android:elevation="12dp"
+        android:translationZ="12dp"
+        android:clipToOutline="false"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:text="See your Expenses"/>
+    
+    <RelativeLayout
+        android:id="@+id/userLayout_addBudget"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="170dp"
+        android:clickable="true"
+        android:background="@color/Crimson">
+
+        <TextView
+            android:id="@+id/aWhite_logo"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/inspiration"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/user_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/aWhite_logo"
+            android:gravity="center"
+            android:text="$ 201.245.245"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/aWhite_logo"
+            android:layout_below="@id/user_budget"
+            android:gravity="center"
+            android:fontFamily="@font/prata"
+            android:text="Your budget"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+
+        <ImageView
+            android:id="@+id/arForward_white"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:tint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/arForward_white"
+            android:text="Add Budgets"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userLayout_addExpenses"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:clickable="true"
+        android:background="@color/Apricot">
+
+        <TextView
+            android:id="@+id/aBlack_logo"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/inspiration"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/black"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/user_expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/aBlack_logo"
+            android:gravity="center"
+            android:text="$ 201.245.245"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/aBlack_logo"
+            android:layout_below="@id/user_expenses"
+            android:gravity="center"
+            android:fontFamily="@font/prata"
+            android:text="Your expense"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+        <ImageView
+            android:id="@+id/arForward_black"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:tint="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/arForward_black"
+            android:text="Add Expenses"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Apricot"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/Crimson" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/logo_white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        app:tint="@color/white"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/avatar"></ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/view"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/space"
+        android:ellipsize="end"
+        android:fontFamily="@font/prata"
+        android:lines="1"
+        android:layout_marginStart="20dp"
+        android:text="Alex Alexander"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
