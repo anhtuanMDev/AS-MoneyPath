@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/changePortfolio"
+            android:title="Change portfolio"
+            android:icon="@drawable/settinginfor_icon"/>
+
+        <item
+            android:id="@+id/notification"
+            android:title="Notification"
+            android:icon="@drawable/bell_icon"/>
+
+        <item
+            android:id="@+id/changeSavingRule"
+            android:title="Change saving rule"
+            android:icon="@drawable/savingrule"/>
+
+        <item
+            android:id="@+id/exportAll"
+            android:title="Export all"
+            android:icon="@drawable/excel_icon"/>
+
+        <item
+            android:id="@+id/deleteAccount"
+            android:title="Delete Account"
+            android:icon="@drawable/deleteaccount_icon"/>
+
+        <item
+            android:id="@+id/logOut"
+            android:title="Log out"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/aboutUs"
+            android:title="About us"
+            android:icon="@drawable/infor_icon"/>
+
+        <item
+            android:id="@+id/appRule"
+            android:title="App’s rule"
+            android:icon="@drawable/rule_icon"/>
+
+        <item
+            android:id="@+id/contactUs"
+            android:title="Contact us"
+            android:icon="@drawable/contact_icon"/>
+
+    </group>
+</menu>
